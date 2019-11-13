@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
+    public DialogueManager diaManager;
+    public int line;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +21,6 @@ public class Interactable : MonoBehaviour
     public void InteractedWith()
     {
         Debug.Log("I've been interacted with");
+        diaManager.PlayDialogue(line);
     }
 }

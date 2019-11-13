@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float walkSpeed;
     Rigidbody rb;
+    public GameObject camera;
     CursorLockMode lockMode;
 
     public GameObject handSymbolThing;
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Movement stuff
+        //Debug.Log(camera.transform.forward);
         if(Input.GetKey("w"))
         {
             //float xMovement = walkSpeed * Mathf.Cos(transform.localRotation.y);
@@ -30,19 +32,40 @@ public class PlayerController : MonoBehaviour
 
             //transform.position = new Vector3(transform.position.x + xMovement, transform.position.y, transform.position.z + zMovement);
 
-            rb.velocity = transform.forward * walkSpeed;
+            //Debug.Log("Forward");
+            rb.velocity = new Vector3(camera.transform.forward.x, 0, camera.transform.forward.z) * walkSpeed;
+        }
+        else if(Input.GetKey("a"))
+        {
+            //Debug.Log("Left");
+            rb.velocity = new Vector3(camera.transform.right.x, 0, camera.transform.right.z) * walkSpeed * -1;
+        }
+        else if (Input.GetKey("s"))
+        {
+            //Debug.Log("Back");
+            rb.velocity = new Vector3(camera.transform.forward.x, 0, camera.transform.forward.z) * walkSpeed * -1;
+        }
+        else if (Input.GetKey("d"))
+        {
+            //Debug.Log("Right");
+            rb.velocity = new Vector3(camera.transform.right.x, 0, camera.transform.right.z) * walkSpeed;
         }
         else
         {
-            rb.velocity = Vector3.zero;
+            //Debug.Log("Stopped");
+            rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
 
         //Interaction stuff
         RaycastHit info;
-        Physics.Raycast(transform.position, transform.forward, out info, interactRange);
+        Physics.Raycast(transform.position, camera.transform.forward, out info, interactRange);
         if(info.collider != null && info.collider.gameObject.tag == "Interactable")
         {
             handSymbolThing.SetActive(true);
+            if (Input.GetMouseButtonDown(0))
+            {
+                info.collider.gameObject.SendMessage("InteractedWith");
+            }
 
         }
         else
@@ -50,9 +73,6 @@ public class PlayerController : MonoBehaviour
             handSymbolThing.SetActive(false);
         }
 
-        if(Input.GetMouseButtonDown(0) && info.collider != null)
-        {
-            info.collider.gameObject.SendMessage("InteractedWith");
-        }
+        
     }
 }
