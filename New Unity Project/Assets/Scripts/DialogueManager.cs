@@ -98,7 +98,7 @@ public class DialogueManager : MonoBehaviour
         int locOfCloseBracket = lineToPrint.IndexOf("]");
         int locOfOpenCurl = lineToPrint.IndexOf("{");
         int locOfCloseCurl = lineToPrint.IndexOf("}");
-
+        print("POWPOW");
         string lineActual = lineToPrint.Substring(locOfCloseCurl + 1, lineToPrint.Length - locOfCloseCurl - (lineToPrint.Length - locOfOpenBracket) - 1);
         //Debug.Log(lineActual);
 
@@ -110,7 +110,8 @@ public class DialogueManager : MonoBehaviour
 
         //Debug.Log(lineToPrint.Substring(locOfCloseBracket + 1));
         int nextLineVar = int.Parse(lineToPrint.Substring(locOfCloseBracket + 1));
-        if(!textReading)
+
+        if (!textReading)
             StartCoroutine(Say(lineActual, speaker, delay, nextLineVar, lineSpeed));
 
 

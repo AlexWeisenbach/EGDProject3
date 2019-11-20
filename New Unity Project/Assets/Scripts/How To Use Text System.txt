@@ -1,0 +1,10 @@
+text file with a bunch of lines
+dialogue manager parses in lines, requires a format
+first number is the nubmer of letters per frame (0.75 = 3/4 of a letter per frame)
+{number} the type of text box spatially on the screen
+new line means new line to parse through
+[numberofsecondsyouwantittostayonscreen]numberoflinetonextplaynegativeoneendsit
+
+.75{0}Girls are very pretty.
+I love them so much!
+But not the ugly ones.[55]-1
