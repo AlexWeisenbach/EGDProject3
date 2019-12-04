@@ -7,7 +7,7 @@ using Uduino;
 public class CheckCircuit : MonoBehaviour
 {
     UduinoManager manager;
-    bool closedCircuit;
+    public bool closedCircuit;
 
     // Start is called before the first frame update
     void Start()
