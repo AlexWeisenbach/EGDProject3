@@ -1,3 +1,7 @@
-.75{0}Girls are very pretty.
-I love them so much!
-But not the ugly ones.[10]-1
+.75{0}The bed of the victim.  The sheets were stained in the incident and taken away as evidence, in consultation with the detectives.[10]-1
+.75{0}A broken window.  It's been shattered to pieces, but none of the shards seem to be on the floor.[10]-1
+.75{0}A bedside lamp that's been broken apart.  Looks like someone shoved it off the nightstand.[10]-1
+.75{0}A simple, wooden table.  The drawers are filled with magazines about different high schools.[10]-1
+.75{0}A wardrobe that was shared between the victim and her husband.  It's packed with suits and teacher's outfits.[10]-1
+.75{0}The victim's work desk.  Its wooden surface is well-worn from years of frequent use.[10]-1
+.75{0}The victim's bureau.  It's full of neatly folded clothes.[10]-1
