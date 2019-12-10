@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         //Movement stuff
         //Debug.Log(camera.transform.forward);
-        print(rb.velocity);
+        //print(rb.velocity);
         if(Input.GetKey("w"))
         {
             //float xMovement = walkSpeed * Mathf.Cos(transform.localRotation.y);

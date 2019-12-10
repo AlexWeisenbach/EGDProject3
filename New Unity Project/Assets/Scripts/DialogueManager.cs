@@ -74,7 +74,7 @@ public class DialogueManager : MonoBehaviour
             speedMult = 1;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !advanceLine)
+        if (Input.GetMouseButtonDown(0) && !advanceLine)
         {
             advanceLine = true;
         }
