@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject handSymbolThing;
     public float interactRange;
+
+    public TimerAndAccuse acc;
     // Start is called before the first frame update
     void Start()
     {
@@ -73,6 +75,10 @@ public class PlayerController : MonoBehaviour
             handSymbolThing.SetActive(false);
         }
 
+        if(Input.GetKeyDown("p"))
+        {
+            acc.Accuse();
+        }
         
     }
 }
