@@ -12,6 +12,7 @@ public class CheckCircuit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        closedCircuit = false;
         manager = UduinoManager.Instance;
         manager.pinMode(3, PinMode.Input);   
     }
