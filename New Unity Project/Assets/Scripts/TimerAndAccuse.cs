@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerAndAccuse : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class TimerAndAccuse : MonoBehaviour
         if(timeLimit <= 0)
         {
             print("you lose");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 
@@ -36,10 +38,12 @@ public class TimerAndAccuse : MonoBehaviour
         if(check.closedCircuit == true)
         {
             print("you win!");
+            SceneManager.LoadScene("WinScene");
         }
         else
         {
             print("you lose");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 }
