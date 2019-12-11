@@ -19,6 +19,12 @@ public class MainMenu : MonoBehaviour
 
     public void BeginGame()
     {
+        SceneManager.LoadScene("TransitionScene");
+    }
+
+    public void StartLooking()
+    {
         SceneManager.LoadScene("SampleScene");
     }
+
 }
