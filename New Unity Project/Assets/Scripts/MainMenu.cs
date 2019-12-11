@@ -27,4 +27,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("CrimeScene");
     }
 
+    public void LoadStart()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
 }
