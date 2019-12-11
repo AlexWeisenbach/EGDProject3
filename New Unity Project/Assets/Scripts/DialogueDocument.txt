@@ -5,3 +5,4 @@
 .75{0}A wardrobe that was shared between the victim and her husband.  It's packed with suits and teacher's outfits.[3]-1
 .75{0}The victim's work desk.  Its wooden surface is well-worn from years of frequent use.[3]-1
 .75{0}The victim's bureau.  It's full of neatly folded clothes.[3]-1
+.75{0}A wooden nightstand.  There's an assortment of planners, some several years old, inside.[3]-1
