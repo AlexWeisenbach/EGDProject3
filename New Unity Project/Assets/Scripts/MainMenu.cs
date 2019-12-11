@@ -19,12 +19,12 @@ public class MainMenu : MonoBehaviour
 
     public void BeginGame()
     {
-        SceneManager.LoadScene("TransitionScene");
+        SceneManager.LoadScene("TransitionScene", LoadSceneMode.Single);
     }
 
     public void StartLooking()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("CrimeScene");
     }
 
 }
