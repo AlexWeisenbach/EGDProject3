@@ -349,6 +349,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
+--- !u!1 &600611778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6244996324940715969, guid: 651cb023b2c76fc41943cf8bb10de5d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1011534775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &672454627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,6 +498,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 927c35966c587cc4bb31e7c70aacbead, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3698b7a081fdee4ea3d344a8c39e76c, type: 3}
+--- !u!114 &728395392 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7455711520565588881, guid: 731bb0f5ed6bcdd4bad2502e184d25b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2030525132}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003c2a41c7c87764c9b8b4a6f26aa7cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &789148594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -577,11 +595,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6244996324940715969, guid: 651cb023b2c76fc41943cf8bb10de5d6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6244996324664663500, guid: 651cb023b2c76fc41943cf8bb10de5d6,
         type: 3}
@@ -688,6 +701,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6244996324940715969, guid: 651cb023b2c76fc41943cf8bb10de5d6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6244996324461827397, guid: 651cb023b2c76fc41943cf8bb10de5d6,
         type: 3}
       propertyPath: m_IsActive
@@ -718,8 +736,25 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6244996324041882816, guid: 651cb023b2c76fc41943cf8bb10de5d6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 651cb023b2c76fc41943cf8bb10de5d6, type: 3}
+--- !u!114 &1011534776 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6244996324274059876, guid: 651cb023b2c76fc41943cf8bb10de5d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1011534775}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1192658506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1169,6 +1204,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1071631720704113413, guid: c9850b5b67071ec40aaa01f34bcf0955,
+        type: 3}
+      propertyPath: handSymbolThing
+      value: 
+      objectReference: {fileID: 600611778}
+    - target: {fileID: 1071631720704113413, guid: c9850b5b67071ec40aaa01f34bcf0955,
+        type: 3}
+      propertyPath: acc
+      value: 
+      objectReference: {fileID: 728395392}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9850b5b67071ec40aaa01f34bcf0955, type: 3}
 --- !u!1001 &2030525132
@@ -1238,6 +1283,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7455711520565588881, guid: 731bb0f5ed6bcdd4bad2502e184d25b5,
+        type: 3}
+      propertyPath: clock
+      value: 
+      objectReference: {fileID: 1011534776}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 731bb0f5ed6bcdd4bad2502e184d25b5, type: 3}
 --- !u!1001 &5175401729237430629
